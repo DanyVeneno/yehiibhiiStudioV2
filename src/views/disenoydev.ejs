@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= title %></title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "340206841719956");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=340206841719956&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <%- include('partials/head')%>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VZF73L1Q21"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VZF73L1Q21");
+  </script>
+
+  <body>
+    <%- include('partials/navigation')%>
+
+    <section id="hero" class="">
+      <h1
+        class="mt-16 text-center bg-gradient-to-r from-zinc-900 via-lime-500 to-lime-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold"
+      >
+        Diseño y Desarrollo Web
+      </h1>
+      <!-- Container For Image & Content -->
+      <div
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0 mt-16"
+      >
+        <!-- Content -->
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+          <h1
+            class="bg-gradient-to-r from-zinc-900 via-lime-500 to-lime-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold text-center lg:text-6xl lg:text-left"
+          >
+            Un Ecosistema Digital Comercial
+          </h1>
+          <p
+            class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
+          >
+            Es un conjunto de canales de venta digitales desarrollados con
+            difderentes tecnologías, además de las caracteristicas especiales de
+            cada uno de estos canales.
+          </p>
+
+          <!-- Buttons Container -->
+          <div
+            class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+          >
+            <a
+              href="#0"
+              class="p-4 text-sm font-semibold bg-zinc-950 text-lime-500 bg-softBlue rounded-lg shadow-md border-2 border-softBlue md:text-base hover:bg-zinc-700 hover:text-softBlue"
+              >Leer Articulo 1</a
+            >
+            <a
+              href="#0"
+              class="p-4 text-sm font-semibold text-lime-500 bg-gray-300 rounded-lg shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:text-gray-600"
+              >Leer Articulo 2</a
+            >
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div class="bg-hero"></div>
+          <img
+            src="/image/image-computer2.png"
+            alt=""
+            class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Heading -->
+    <section id="features">
+      <div class="container mx-auto mt-16 px-6">
+        <h2
+          class="mb-6 text-center bg-gradient-to-r from-zinc-900 via-lime-500 to-lime-600 bg-clip-text text-transparent text-5xl drop-shadow font-extrabold"
+        >
+          La transformación digital
+        </h2>
+        <p class="max-w-md mx-auto text-center text-grayishBlue">
+          La transformación digital dentro de una organización comercial se
+          refiere al proceso de aprovechar las tecnologías digitales para
+          redefinir o mejorar fundamentalmente la forma en que la empresa opera,
+          entrega valor a sus clientes y se mantiene competitiva en un entorno
+          empresarial en constante evolución. La transformación digital no se
+          trata solo de adoptar nuevas tecnologías, sino de cambiar la
+          mentalidad y los procesos internos para lograr una mayor eficiencia y
+          efectividad.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Tabs -->
+    <section id="tabs">
+      <!-- Tabs/Panels Container -->
+      <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+        <div class="bg-tabs"></div>
+        <!-- Tabs Flex Container -->
+        <div
+          class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row"
+        >
+          <!-- Tab 1 -->
+          <div
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-1"
+          >
+            <div
+              class="py-5 border-b-4 border-softRed font-bold"
+              data-target="panel-1"
+            >
+              Software/Canales
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-2"
+          >
+            <div class="py-5 font-bold" data-target="panel-2">Cultura Web</div>
+          </div>
+
+          <!-- Tab 3 -->
+          <div
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softRed md:w-1/3 tab"
+            data-target="panel-3"
+          >
+            <div class="py-5 font-bold" data-target="panel-3">
+              Proceso y compromiso continuo
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Panels -->
+        <div id="panels" class="container mx-auto">
+          <!-- Panel 1 -->
+          <div
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <iframe
+                width="200"
+                height="360"
+                src="https://www.youtube.com/embed/QQrIpIZL6lw"
+                title="Tecnología web de principiantes para principiantes"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <!--<img
+                src="https://youtu.be/2aTtJGdyTMw"
+                alt=""
+                class="relative z-10"
+              />-->
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Canales digitales organizacionales y de venta
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                <strong>Software Administrativo:</strong> La caracteristica de
+                este tipo de software es el del uso interno dentro de la empresa
+                ó negocio.
+                <br />
+
+                <strong>Ecosistema de Venta:</strong> Nos referimos a los
+                canalaes externos donde vamos a interactuar con los clientes
+                qyue ya existen y los posibles nuevos. <br />
+                <strong>Redes Sociales:</strong> Estas son empresas privadas en
+                donde vamos a utilizarlos como SaaS.(Software as a Service).
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-2"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <iframe
+                width="560"
+                height="330"
+                src="https://www.youtube.com/embed/2aTtJGdyTMw"
+                title="disruptio"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <!--<img src="/image/wrp.png" alt="" class="relative z-10" />-->
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Cultura Web
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                La transformación digital empresarial implica utilizar
+                tecnologías digitales para mejorar la eficiencia, la experiencia
+                del cliente y la innovación. Esto implica cambiar la cultura y
+                los procesos internos. Involucra tecnologías como la nube,
+                análisis de datos, inteligencia artificial y automatización. La
+                seguridad cibernética es crucial. La transformación digital
+                busca mejorar la agilidad, la colaboración y la sostenibilidad,
+                y es un proceso continuo que requiere una estrategia sólida y
+                liderazgo comprometido.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-3"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <iframe
+                width="560"
+                height="330"
+                src="https://www.youtube.com/embed/fn4h8mdNCYg"
+                title="Transformación Digital"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <!--<img src="/image/color.png" alt="" class="relative z-10" />-->
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Procesos y compromisos
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                La transformación digital dentro de una organización empresarial
+                se refiere al proceso de aprovechar las tecnologías digitales
+                para redefinir o mejorar fundamentalmente la forma en que la
+                empresa opera, entrega valor a sus clientes y se mantiene
+                competitiva en un entorno empresarial en constante evolución. La
+                transformación digital no se trata solo de adoptar nuevas
+                tecnologías, sino de cambiar la mentalidad y los procesos
+                internos para lograr una mayor eficiencia y efectividad. Aquí
+                hay algunos aspectos clave de la transformación digital en una
+                organización empresarial:
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Heading -->
+    <section id="download">
+      <div class="container mx-auto px-6">
+        <h2
+          class="mb-6 text-5xl text-center md:text-4xl bg-gradient-to-r from-zinc-900 via-lime-500 to-lime-600 bg-clip-text text-transparent drop-shadow font-extrabold text-center"
+        >
+          Servicios de Diseño y Desarrollo Web
+        </h2>
+        <p class="max-w-lg mx-auto text-center text-grayishBlue">
+          Es un estudio de trabajo donde desarrollamos herramientas con la
+          misión de fortalecer el crecimiento y evolución de tu negocio, empresa
+          o marca personal, desarrollando un modelo nuevo de negocio, con la
+          característica de agregar y crear valor a tus productos y/o servicios,
+          utilizando la integración de tecnología web y digital que los
+          segmentos de mercado están buscando. <br />
+          Disrupt yourself or not!
+        </p>
+      </div>
+    </section>
+
+    <!-- Download Boxes -->
+    <section id="download-boxes" class="py-32">
+      <!-- Boxes Container -->
+      <div
+        class="relative flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row"
+      >
+        <!-- Box 1 -->
+        <div
+          class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3"
+        >
+          <!-- Image -->
+          <div class="flex justify-center">
+            <img src="/image/webpackuno.jpg" alt="" />
+          </div>
+          <!-- Text -->
+          <h5 class="pt-6 text-xl font-bold">Paquete Digital</h5>
+          <p class="text-gray-400">Paquete Basico</p>
+
+          <!-- Dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+            <a
+              href="#0"
+              class="block w-full py-3 text-white duration-200 border-2 rounded-lg hover:text-softBlue bg-zinc-950 hover:bg-zinc-700 border-softBlue"
+              >Ver Producto</a
+            >
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-8"
+          >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="/image/webpackdos.jpg" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Paquete Digital</h5>
+            <p class="text-gray-400">Paquete Completo</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="#0"
+                class="block w-full py-3 text-white duration-200 border-2 rounded-lg hover:text-softBlue bg-zinc-950 hover:bg-zinc-700 border-softBlue"
+                >Ver Producto</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="w-full md:w-1/3">
+          <div
+            class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-16"
+          >
+            <!-- Image -->
+            <div class="flex justify-center rounded-lg">
+              <img src="/image/webpacktres.jpg" alt="" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6 text-xl font-bold">Paquete Digital</h5>
+            <p class="text-gray-400">Paquete Avanzado</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="#0"
+                class="block w-full py-3 text-white duration-200 border-2 rounded-lg hover:text-softBlue border-softBlue bg-zinc-950 hover:bg-zinc-700"
+                >Ver Producto</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-600 body-font bg-zinc-950">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-lime-500"
+            >
+              <a
+                href="https://youtu.be/GYY2SYOWC_g?list=PLzLMvQMoqVUchRIzrCHozG2nqQyGyv-d7"
+                target="_blank"
+              >
+                Ecosistema Digital Comercial e Interno</a
+              >
+            </h1>
+            <div class="h-1 w-20 bg-zinc-300 rounded"></div>
+          </div>
+          <p
+            class="lg:w-1/2 w-full leading-relaxed text-lime-500 font-semibold"
+          >
+            Un Ecosistema esta constituido por diferentes canales digitales por
+            obviedad con diferentes propósitos, se trata de un conjunto de
+            herramientas que permiten interactuar y comunicarse en línea.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/sitio-web.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Desarrollo Web
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Sitio Web
+              </h2>
+              <p class="leading-relaxed text-base">
+                El sitio web tiene la función de ser la carta de presentación de
+                tu Organización,Empresa y/o negocio en el mundo digital.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/blog.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Desarrollo Web
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Blog / CMS (Content Managment System)
+              </h2>
+              <p class="leading-relaxed text-base">
+                El blog tiene la principal función de ser tu canal de noticias
+                en el cual retroalimentaras a tus actuales y futuros clientes
+                sobre tus productos y/o servicios..
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/tienda-en-linea.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Desarrollo Web
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Tienda en Línea
+              </h2>
+              <p class="leading-relaxed text-base">
+                A la tienda en linea no le daremos vueltas es el canal en donde
+                el cliente concretan la transacción de valor economico por valor
+                de servicio y/o de producto.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/pagina-de-aterrizaje.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Desarrollo Web
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Pagina de Aterrizaje
+              </h2>
+              <p class="leading-relaxed text-base">
+                Tiene la función de hacer la captación de prospectos interesados
+                en tus productos y/o servicios.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--02-->
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/app.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Desarrollo Web
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Aplicaciones
+              </h2>
+              <p class="leading-relaxed text-base">
+                Las apps pueden ser moviles y web y tienen la caracteristica de
+                enfocarse en algun producto y/o servicio especializado.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/videovlog.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Desarrollo Web
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Videovlog
+              </h2>
+              <p class="leading-relaxed text-base">
+                El canal de youtube tiene la función de ofrecer información
+                especifica de tus productos y servicios en un canal audiovisual.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/redes.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Marketing Digítal
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Redes Sociales
+              </h2>
+              <p class="leading-relaxed text-base">
+                Las redes sociales son empresas privadas en donde se utilizan
+                principalmente para la creación de campáñas publicitarias.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/podcast.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Marketing Digital
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Podcast
+              </h2>
+              <p class="leading-relaxed text-base">
+                El podcast tiene la función de crear una cercania con los
+                interesados en tus productos y/o servicios de una forma manos
+                libres.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--03-->
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/productividad.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Administrativo
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Diseño de Talleres de Productividad
+              </h2>
+              <p class="leading-relaxed text-base">
+                Diseño y elaboración de talleres para la transformación
+                Digitales FODA / M.B.C. / Cultura Organizacional
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/marketing.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Marketing
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Campañas de Marketing Digital
+              </h2>
+              <p class="leading-relaxed text-base">
+                El ecosistema digital no tendra los efectos esperados sin la
+                implementación de las campañas de marketing.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/prox.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Proxímo Servicio
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                eleifend odio at risus dignissim, in suscipit nisl varius.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="/image/prox.jpg"
+                alt="content"
+              />
+              <h3
+                class="tracking-widest text-zinc-500 text-xs font-medium title-font"
+              >
+                Lorem ipsum dolor
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Proxímo servicio
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                eleifend odio at risus dignissim, in suscipit nisl varius.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Heading -->
+    <section id="faq">
+      <div class="container mx-auto my-32">
+        <h2
+          class="mb-6 text-5xl font-extrabold text-center md:text-4xl bg-gradient-to-r from-zinc-900 via-lime-500 to-lime-600 bg-clip-text text-transparent drop-shadow font-extrabold text-center"
+        >
+          Preguntas Frequentes
+        </h2>
+        <p class="max-w-lg px-6 mx-auto text-center text-graishBlue">
+          Aquí tienes algunas de nuestras preguntas frecuentes. Si tienes alguna
+          otra pregunta que te gustaría que respondiéramos, no dudes en
+          enviarnos un correo electrónico.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq-accordion">
+      <!-- Main Container -->
+      <div class="container mx-auto px-6 mb-32">
+        <!-- Accordion Container -->
+        <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+          <!-- Tab 1 -->
+          <div class="py-1 border-b outline-none group" tabindex="1">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-lime-500"
+              >
+                ¿Quién debe experimentar la transformación digítal?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-lime-600"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400">
+                La transformación digital la debé tener encuanta todos aquellos
+                negocios y/o empresas que estén teniendo problemas para generar
+                nuevos clientes y dejar de ser un producto y/o servicios
+                commodity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div class="py-1 border-b outline-none group" tabindex="2">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-lime-500"
+              >
+                ¿Qué es un producto y/o servicio commodity?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-lime-600"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400">
+                Un producto o servicio "commodity" o "commodity product/service"
+                se refiere a un artículo o servicio que es ampliamente
+                disponible en el mercado y que no tiene diferenciación
+                significativa en términos de calidad, características o marca
+                entre los proveedores. Estos productos o servicios suelen ser
+                intercambiables y se compiten principalmente en función del
+                precio.<br />
+
+                Las características comunes de un producto o servicio de
+                comodidad incluyen:
+                <br />
+                1. Homogeneidad: Los productos o servicios de comodidad son muy
+                similares en términos de calidad y características entre
+                diferentes proveedores. No hay diferencias sustanciales que
+                permitan a un proveedor destacar sobre otros.
+                <br />
+                2. Competencia basada en el precio: Dado que la diferenciación
+                es limitada, la competencia se centra en ofrecer el precio más
+                bajo para atraer a los compradores.
+                <br />
+                3. Demanda estable: Los productos o servicios de comodidad
+                suelen tener una demanda constante o predecible, ya que son
+                esenciales o altamente utilizados en la vida cotidiana.
+                <br />
+                4. Margen de beneficio estrecho: Debido a la competencia basada
+                en el precio, los proveedores de productos o servicios de
+                comodidad a menudo tienen márgenes de beneficio ajustados.
+                <br />
+                Ejemplos de productos de comodidad incluyen materias primas como
+                el petróleo, el acero y los productos agrícolas básicos como el
+                arroz. En cuanto a servicios, ejemplos de comodidades podrían
+                ser servicios de transporte básicos, servicios públicos como el
+                suministro de agua y electricidad, y servicios financieros
+                básicos como cuentas de ahorro.
+                <br />
+                En resumen, los productos o servicios de comodidad son aquellos
+                que no se destacan por características únicas o diferenciadoras,
+                y la competencia se centra en el precio, lo que a menudo resulta
+                en márgenes de beneficio más bajos para los proveedores.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 3 -->
+          <div class="py-1 border-b outline-none group" tabindex="3">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-lime-500"
+              >
+                ¿Cuál sería el paque te recomendado para iniciar la
+                transformación?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-lime-600"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400">
+                El paquete recomendado dependerá del tamaño de tu negocio,
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 4 -->
+          <div class="py-1 border-b outline-none group" tabindex="4">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-lime-500"
+              >
+                ¿Que requisistos se requiere desde una perspectiva general para
+                iniciar la transformación?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-lime-600"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('partials/footer')%>
+    <script>
+      const tabs = document.querySelectorAll(".tab");
+      const panels = document.querySelectorAll(".panel");
+
+      tabs.forEach((tab) => tab.addEventListener("click", onTabClick));
+
+      function onTabClick(e) {
+        // Deactivate all tabs
+        tabs.forEach((tab) => {
+          tab.children[0].classList.remove(
+            "border-softRed",
+            "border-b-4",
+            "md:border-b-0"
+          );
+        });
+
+        // Hide all panels
+        panels.forEach((panel) => panel.classList.add("hidden"));
+
+        // Activate a new tab and panel based on the target
+        e.target.classList.add("border-softRed", "border-b-4");
+        const classString = e.target.getAttribute("data-target");
+        document
+          .getElementById("panels")
+          .getElementsByClassName(classString)[0]
+          .classList.remove("hidden");
+      }
+    </script>
+    <!--<script>
+      const modalbg = document.getElementById("modal-bg");
+      const modalSwitch = document.getElementById("modal-switch");
+      const modalBox = document.getElementById("modal-box");
+      const modalClose = document.getElementById("modal-close");
+      modalbg.addEventListener("click", function () {
+        modalBox.classList.add("hidden");
+        modalbg.classList.add("hidden");
+      });
+      modalSwitch.addEventListener("click", function () {
+        modalBox.classList.remove("hidden");
+        modalbg.classList.remove("hidden");
+      });
+      modalClose.addEventListener("click", function () {
+        modalBox.classList.remove("hidden");
+        modalbg.classList.remove("hidden");
+      });
+    </script>-->
+  </body>
+</html>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->

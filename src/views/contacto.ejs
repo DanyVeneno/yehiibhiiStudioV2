@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= title %></title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "340206841719956");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=340206841719956&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <link rel="manifest" href="./img/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%- include('partials/head')%>
+    <!-- Begin Mailchimp Signup Form -->
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <style type="text/css">
+      #mc_embed_signup {
+        background: rgba(41, 41, 41, 0.76);
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+        width: 90%;
+        border-radius: 8px 8px 8px;
+        font-weight: 400;
+        border: yellowgreen 4px solid;
+      }
+
+      @media (min-width: 575.98px) {
+        #mc_embed_signup {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+      }
+
+      @media (max-width: 991.98px) {
+      }
+
+      @media (max-width: 1199.98px) {
+      }
+
+      @media (max-width: 1399.98px) {
+      }
+
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>-->
+    <!--<style type="text/css">
+      #mc-embedded-subscribe-form input[type="checkbox"] {
+        display: inline;
+        width: auto;
+        margin-right: 10px;
+      }
+      #mergeRow-gdpr {
+        margin-top: 20px;
+      }
+      #mergeRow-gdpr fieldset label {
+        font-weight: normal;
+      }
+      #mc-embedded-subscribe-form .mc_fieldset {
+        border: none;
+        min-height: 0px;
+        padding-bottom: 0px;
+      }
+      #news {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+    </style>-->
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-VZF73L1Q21"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-VZF73L1Q21");
+  </script>
+  <body
+    class="bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-lime-50 to-zinc-100"
+  >
+    <%- include('partials/navigation')%>
+    <!-- Features -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div class="relative p-6 md:p-16">
+        <!-- Grid -->
+        <div
+          class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center"
+        >
+          <div class="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
+            <h2
+              class="text-2xl font-bold sm:text-3xl bg-gradient-to-r from-zinc-900 via-lime-500 to-lime-600 bg-clip-text text-transparent drop-shadow"
+            >
+              Contacta con nosotros por medio de los siguientes canales:
+            </h2>
+
+            <!-- Tab Navs -->
+            <nav
+              class="grid gap-4 mt-5 md:mt-10"
+              aria-label="Tabs"
+              role="tablist"
+            >
+              <button
+                type="button"
+                class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700 active"
+                id="tabs-with-card-item-1"
+                data-hs-tab="#tabs-with-card-1"
+                aria-controls="tabs-with-card-1"
+                role="tab"
+                href="tel:5610731990"
+              >
+                <span class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#efefef"
+                    width="80px"
+                    height="100px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"
+                    />
+                  </svg>
+                  <span class="grow ml-6">
+                    <span
+                      class="block text-lg font-semibold bg-gradient-to-r from-lime-500 via-zinc-500 to-lime-600 bg-clip-text text-transparent drop-shadow animate-bounce"
+                      >Llamanos</span
+                    >
+                    <span
+                      class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200"
+                      >Si te agrada ser concreto y no tienes inconveniente dale
+                      click para charlar.</span
+                    >
+                  </span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
+                id="tabs-with-card-item-2"
+                data-hs-tab="#tabs-with-card-2"
+                aria-controls="tabs-with-card-2"
+                role="tab"
+                href="https://wa.me/5610731990?text=Hola%20me%20interesan%20tus%20servicios%20de%20desarrollo%20web"
+              >
+                <span class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#efefef"
+                    width="80px"
+                    height="80px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+                    />
+                  </svg>
+                  <span class="grow ml-6">
+                    <span
+                      class="block text-lg font-semibold bg-gradient-to-r from-lime-500 via-zinc-500 to-lime-600 bg-clip-text text-transparent drop-shadow animate-bounce"
+                      >Chateá con Nosotros</span
+                    >
+                    <span
+                      class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200"
+                      >Si lo tuyo son los mensajes y el chat dale click para ser
+                      asistido.</span
+                    >
+                  </span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
+                id="tabs-with-card-item-3"
+                data-hs-tab="#tabs-with-card-3"
+                aria-controls="tabs-with-card-3"
+                role="tab"
+              >
+                <span class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#efefef"
+                    width="80px"
+                    height="80px"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                  <span class="grow ml-6">
+                    <span
+                      class="block text-lg font-semibold bg-gradient-to-r from-lime-500 via-zinc-500 to-lime-600 bg-clip-text text-transparent drop-shadow animate-bounce"
+                      >Envianos en Correo</span
+                    >
+                    <span
+                      class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200"
+                      >Te gustaría ser más explicito no dudes en enviarnos un
+                      correo electrónico.</span
+                    >
+                  </span>
+                </span>
+              </button>
+            </nav>
+            <!-- End Tab Navs -->
+          </div>
+          <!-- End Col -->
+
+          <div class="lg:col-span-6">
+            <div class="relative">
+              <!-- Tab Content -->
+              <div>
+                <div
+                  id="tabs-with-card-1"
+                  role="tabpanel"
+                  aria-labelledby="tabs-with-card-item-1"
+                >
+                  <img
+                    class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                    src="/image/contacto.png"
+                    alt="Image Description"
+                  />
+                </div>
+
+                <div
+                  id="tabs-with-card-2"
+                  class="hidden"
+                  role="tabpanel"
+                  aria-labelledby="tabs-with-card-item-2"
+                >
+                  <img
+                    class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                    src=""
+                    alt="Image Description"
+                  />
+                </div>
+
+                <div
+                  id="tabs-with-card-3"
+                  class="hidden"
+                  role="tabpanel"
+                  aria-labelledby="tabs-with-card-item-3"
+                >
+                  <img
+                    class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                    src=""
+                    alt="Image Description"
+                  />
+                </div>
+              </div>
+              <!-- End Tab Content -->
+
+              <!-- SVG Element -->
+              <div
+                class="hidden absolute top-0 right-0 translate-x-20 md:block lg:translate-x-20"
+              >
+                <!--<svg
+                  class="w-16 h-auto text-orange-500"
+                  width="121"
+                  height="135"
+                  viewBox="0 0 121 135"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164"
+                    stroke="currentColor"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5"
+                    stroke="currentColor"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874"
+                    stroke="currentColor"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                  />
+                </svg>-->
+              </div>
+              <!-- End SVG Element -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+
+        <!-- Background Color -->
+        <div class="absolute inset-0 grid grid-cols-12 w-full h-full">
+          <div
+            class="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-white/[.075]"
+          ></div>
+        </div>
+        <!-- End Background Color -->
+      </div>
+    </div>
+    <!-- End Features -->
+
+    <%- include('partials/footer')%>
+  </body>
+</html>
