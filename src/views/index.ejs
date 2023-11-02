@@ -23,8 +23,15 @@
       href="/image/favicon-16x16.png"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
-    <link rel="stylesheet" href="/css/inicio.css" />
-    <link rel="stylesheet" href="/css/base.css" />
+    <!--<link rel="stylesheet" href="/css/inicio.css" />
+    <link rel="stylesheet" href="/css/base.css" />-->
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pieces.css" />
+    <link rel="stylesheet" type="text/css" href="/sponsor/pater.css" />
+    <script>
+      document.documentElement.className = "js";
+    </script>
     <meta
       name="facebook-domain-verification"
       content="j5f3kbcyvufv3an8ohs77tg37dkjyl"
@@ -88,9 +95,140 @@
     gtag("config", "G-VZF73L1Q21");
   </script>
 
-  <body class="demo-1">
+  <body>
     <%- include('partials/navigation') %>
-    <section class="w-full h-screen">
+    <div id="overlay2" class="z-10"></div>
+
+    <audio class="audio" src="../video/welcome2.wav" loop></audio>
+
+    <main>
+      <img
+        class="soundbutton paused img-fluid py-28"
+        src="/image/sound.gif"
+        alt="sound"
+        id="speech"
+      />
+      <div
+        class="pieces"
+        style="background-image: url(/image/normal.png)"
+        data-img-alt="url(image/alt.png)"
+        data-img-code="url(image/code.png)"
+      ></div>
+      <div class="overlay overlay--hidden"></div>
+      <div class="content">
+        <div class="content__inner">
+          <div class="content__top">
+            <h2 class="title">
+              <span
+                class="title__inner mode mode--design text-2xl font-black pt-48"
+                data-switch
+                data-glitch
+                >Juanito Veneno Estudio</span
+              >
+            </h2>
+            <div class="controls">
+              <!--<a
+                class="codrops-icon codrops-icon--prev"
+                href="https://tympanus.net/Development/GridLoadingAnimations/"
+                title="Previous Demo"
+                ><svg class="icon icon--arrow">
+                  <use xlink:href="#icon-arrow"></use></svg
+              ></a>
+              <a
+                class="codrops-icon codrops-icon--drop"
+                href="https://tympanus.net/codrops/?p=30725"
+                title="Back to the article"
+                ><svg class="icon icon--drop">
+                  <use xlink:href="#icon-drop"></use></svg
+              ></a>-->
+              <button class="btn btn--menu mode mode--design" data-switch>
+                <svg class="icon icon--menu">
+                  <use xlink:href="#icon-menu"></use>
+                </svg>
+                <svg class="icon icon--menu-alt">
+                  <use xlink:href="#icon-menu-alt"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="menu">
+            <ul class="menu__inner">
+              <li class="menu__item text-4xl font-bold">
+                <a class="menu__link" href="/about" data-switch>Acerca de</a>
+              </li>
+              <li class="menu__item text-4xl font-bold">
+                <a class="menu__link" href="/servicios" data-switch
+                  >Servicios</a
+                >
+              </li>
+              <li class="menu__item text-4xl font-bold">
+                <a class="menu__link" href="/tienda" data-switch>Portafolio</a>
+              </li>
+              <li class="menu__item text-4xl font-bold">
+                <a class="menu__link" href="/contacto" data-switch>Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu menu--code">
+            <ul class="menu__inner">
+              <li class="menu__item">
+                <a class="menu__link" data-switch>Disrupt</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-switch>Yourself</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-switch>Or</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-switch>Not !</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-switch>> Encuentrame Aquí</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content__bottom">
+            <div class="switch mode mode--design">
+              <a class="switch__item switch__item--current">Diseño</a>
+              <a class="switch__item"
+                ><span class="mode mode--design" data-switch data-glitch
+                  >Desarrollo</span
+                ></a
+              >
+            </div>
+            <div class="link-wrap">
+              <a class="contact-link mode mode--design" data-switch data-glitch
+                >Llamanos</a
+              >
+            </div>
+          </div>
+          <!-- Sponsor -->
+          <a class="pater mode mode--design" href="/servicios">
+            <img src="sponsor/hired.png" class="pater__img" />
+            <h2 class="pater__title" aria-label="Hired">
+              Transformate a lo digital<br />
+              con los paquetes webpack.
+            </h2>
+            <p class="pater__desc">
+              Descubre las muchas utilidades que te brinda
+              <strong>Webpack 2024</strong> y automatiza y agrega valor a tus
+              clientes actuales y los del futuro.
+            </p>
+          </a>
+        </div>
+        <!-- /content__inner-->
+      </div>
+      <!-- /content -->
+      <div class="loading"></div>
+    </main>
+    <script src="js3/imagesloaded.pkgd.min.js"></script>
+    <script src="js3/anime.min.js"></script>
+    <script src="js3/charming.min.js"></script>
+    <script src="js3/screen.js"></script>
+    <script src="js/sound.js"></script>
+
+    <!--<section class="w-full h-screen">
       <main>
         <div id="overlay2" class="z-10"></div>
         <div class="content md:text-sm sm:text-sm">
@@ -103,31 +241,6 @@
             // Author:  Stefan Gustavson (stefan.gustavson@liu.se)
             // Version: 2011-10-11
             //
-            // Many thanks to Ian McEwan of Ashima Arts for the
-            // ideas for permutation and gradient selection.
-            //
-            // Copyright (c) 2011 Stefan Gustavson. All rights reserved.
-            // Distributed under the MIT license. See LICENSE file.
-            // https://github.com/stegu/webgl-noise
-            //
-
-            vec3 mod289(vec3 x)
-            {
-              return x - floor(x * (1.0 / 289.0)) * 289.0;
-            }
-
-            vec4 mod289(vec4 x)
-            {
-              return x - floor(x * (1.0 / 289.0)) * 289.0;
-            }
-
-            vec4 permute(vec4 x)
-            {
-              return mod289(((x*34.0)+1.0)*x);
-            }
-
-            vec4 taylorInvSqrt(vec4 r)
-            {
               return 1.79284291400159 - 0.85373472095314 * r;
             }
 
@@ -375,8 +488,8 @@
 
     <!--<script src="js/demo2.js"></script>
       <script src="js/demo1.js"></script>
-    <script src="js/demo3.js"></script>-->
-    <script src="js/sound.js"></script>
+    <script src="js/demo3.js"></script>
+    <script src="js/sound.js"></script>-->
 
     <%- include('partials/footer') %>
   </body>
