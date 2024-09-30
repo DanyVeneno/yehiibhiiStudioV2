@@ -1,4 +1,4 @@
-*,
+/* *,
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
@@ -122,7 +122,7 @@ a:focus {
   display: block;
 }
 
-/* Icons */
+ Icons 
 .icon {
   display: block;
   width: 1.5em;
@@ -131,7 +131,7 @@ a:focus {
   fill: currentColor;
 }
 
-/* Content */
+ Content 
 .content,
 .content__inner {
   position: absolute;
@@ -332,7 +332,7 @@ a:focus {
   .content__inner {
     padding: 1em 1em 0;
   }
-}
+} */
 
 /**/
 #speech {
