@@ -1,0 +1,98 @@
+#background * {
+  fill-opacity: 0;
+  transition: fill-opacity 1s;
+}
+
+#background.finished * {
+  fill-opacity: 1;
+}
+
+#background path:nth-child(1) {
+}
+
+#background path:nth-child(2) {
+}
+#background path:nth-child(3) {
+}
+#background path:nth-child(4) {
+}
+#background path:nth-child(5) {
+}
+#background path:nth-child(6) {
+}
+#background path:nth-child(7) {
+}
+#background path:nth-child(8) {
+}
+#background path:nth-child(9) {
+}
+#background path:nth-child(10) {
+}
+#background path:nth-child(11) {
+}
+#background path:nth-child(12) {
+}
+#background path:nth-child(13) {
+}
+#background path:nth-child(14) {
+}
+#background path:nth-child(15) {
+}
+#background path:nth-child(16) {
+}
+#background path:nth-child(17) {
+}
+#background path:nth-child(18) {
+}
+#background path:nth-child(19) {
+}
+#background path:nth-child(20) {
+}
+#background path:nth-child(21) {
+}
+#background path:nth-child(22) {
+}
+#background path:nth-child(23) {
+}
+#background path:nth-child(24) {
+}
+#background path:nth-child(25) {
+}
+#background path:nth-child(26) {
+}
+#background path:nth-child(27) {
+}
+#background path:nth-child(28) {
+}
+#background path:nth-child(29) {
+}
+#background path:nth-child(30) {
+}
+#background path:nth-child(31) {
+}
+#background path:nth-child(32) {
+}
+#background path:nth-child(33) {
+}
+#background path:nth-child(34) {
+}
+#background path:nth-child(35) {
+}
+#background path:nth-child(36) {
+}
+#background path:nth-child(37) {
+}
+#background path:nth-child(38) {
+}
+#background path:nth-child(39) {
+}
+#background path:nth-child(40) {
+}
+#background path:nth-child(41) {
+}
+#background path:nth-child(42) {
+}
+#background path:nth-child(43) {
+}
+#background path:nth-child(44) {
+}
