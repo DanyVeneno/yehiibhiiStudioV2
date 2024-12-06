@@ -21,9 +21,6 @@ body {
   margin: 0;
   color: var(--color-text);
   background-color: var(--color-bg);
-  /* font-family: "capitana", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
   width: 100vw;
   overflow-x: hidden;
   background-image: url(../image/noise.png),
@@ -457,7 +454,7 @@ main {
   color: #1e2229;
 }
 #speech1 {
-  width: 60%;
+  width: 100%;
   font-size: 1.2rem;
   color: #f7fee7;
   font-family: Arial, Helvetica, sans-serif;
