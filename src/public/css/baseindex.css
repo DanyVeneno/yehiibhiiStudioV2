@@ -10,12 +10,12 @@
   /* --color-text: rgb(132, 204, 22); */
   --color-bg: #1e2229;
   /* --color-bg: rgb(30, 34, 41); */
-  --color-link: #65b162;
-  --color-link-hover: #e19393;
+  --color-link: rgb(132, 204, 22);
+  --color-link-hover: rgb(247, 254, 231);
   --color-title: #000;
   --page-padding: 2rem;
   --gradient-1: rgb(30 34 41 / 80%);
-  --gradient-2: rgb(132 204 22 / 30%);
+  --gradient-2: rgb(247 254 231 / 30%);
 }
 body {
   margin: 0;
