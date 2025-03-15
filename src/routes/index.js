@@ -3,39 +3,39 @@ import { Router } from "express";
 const router = Router();
 
 router.get("/", (req, res) =>
-  res.render("index", { title: "Juanito Veneno Estudio | Inicio" })
+  res.render("index", { title: "Yehiibhii Estudio | Inicio" })
 );
 router.get("/about", (req, res) =>
-  res.render("about", { title: "Juanito Veneno Estudio | Nosotros" })
+  res.render("about", { title: "Yehiibhii Estudio | Nosotros" })
 );
 
 router.get("/servicios", (req, res) =>
-  res.render("servicios", { title: "Juanito Veneno Estudio | Servicios" })
+  res.render("servicios", { title: "Yehiibhii Estudio | Servicios" })
 );
 router.get("/disenoyartes", (req, res) =>
   res.render("disenoyartes", {
-    title: "Juanito Veneno Estudio | Diseño y Artes Graficas"
+    title: "Yehiibhii Estudio | Diseño y Artes Graficas",
   })
 );
 router.get("/disenoydev", (req, res) =>
   res.render("disenoydev", {
-    title: "Juanito Veneno Estudio | Diseño y Desarrollo Web"
+    title: "Yehiibhii Estudio | Diseño y Desarrollo Web",
   })
 );
 router.get("/podcast", (req, res) =>
-  res.render("podcast", { title: "Juanito Veneno Estudio | Podcast" })
+  res.render("podcast", { title: "Yehiibhii Estudio | Podcast" })
 );
 router.get("/tienda", (req, res) =>
-  res.render("tienda", { title: "Juanito Veneno Estudio | Tienda" })
+  res.render("tienda", { title: "Yehiibhii Estudio | Tienda" })
 );
 
 router.get("/contacto", (req, res) =>
-  res.render("contacto", { title: "Juanito Veneno Estudio | Contacto" })
+  res.render("contacto", { title: "Yehiibhii Estudio | Contacto" })
 );
 
 router.get("/src/views/manual", (req, res) =>
   res.render("manual", {
-    title: "Juanito Veneno Estudio | Manual De Identidad"
+    title: "Yehiibhii Estudio | Manual De Identidad",
   })
 );
 
