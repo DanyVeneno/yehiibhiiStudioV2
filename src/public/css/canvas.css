@@ -1,0 +1,10 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  boz-sizing: border-box;
+} */
+
+#canvas {
+  background: #84cc12;
+  position: absolute;
+}
