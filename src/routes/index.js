@@ -32,6 +32,9 @@ router.get("/tienda", (req, res) =>
 router.get("/contacto", (req, res) =>
   res.render("contacto", { title: "Yehiibhii Estudio | Contacto" })
 );
+router.get("/eventos", (req, res) =>
+  res.render("eventos", { title: "Yehiibhii Estudio | Eventos" })
+);
 
 router.get("/src/views/manual", (req, res) =>
   res.render("manual", {
