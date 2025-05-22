@@ -16,10 +16,10 @@ app.use(firstRoutes);
 app.use(express.static(join(__dirname, "public")));
 
 //en lugar de get se utiliza render para renderizar una vista
-//process.emv.PORT || ....//es una variable de entorno que se define en el archivo package.json
+//process.env.PORT || ....//es una variable de entorno que se define en el archivo package.json
 
 app.listen(process.env.PORT || 3001);
 console.log(
-  "El servicdor esta corriendo bien chingon en el puerto",
+  "El servidor esta corriendo bien chingón en el puerto",
   process.env.PORT || 3001
 );
