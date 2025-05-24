@@ -81,44 +81,17 @@
     gtag("config", "G-VZF73L1Q21");
   </script>
   <body>
-    <!-- Messenger Plugin de chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin de chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "212598832227618");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v18.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+    
     <%- include('partials/navigation')%>
 
     <!-- Global Container -->
     <div class="container mx-auto max-w-7xl p-2 md:p-10">
+      
       <!-- Grid Container -->
       <div
         class="grid gap-6 grid-cols-1 text-white md:grid-cols-4 md:grid-rows-2"
       >
+      
         <!-- Box 1 -->
         <div class="relative p-10 rounded-xl bg-zinc-700 md:col-span-2">
           <!-- Quotes Image -->
@@ -331,6 +304,7 @@
         </div>
       </div>
     </div>
+    
 
     <%- include('partials/footer')%>
   </body>

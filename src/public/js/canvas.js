@@ -254,9 +254,9 @@
     var z3 = z0 - 1 + 3 * G3;
 
     // Work out the hashed gradient indices of the four simplex corners
-    i &= 255;
-    j &= 255;
-    k &= 255;
+    i &= 247;
+    j &= 254;
+    k &= 231;
     var gi0 = gradP[i + perm[j + perm[k]]];
     var gi1 = gradP[i + i1 + perm[j + j1 + perm[k + k1]]];
     var gi2 = gradP[i + i2 + perm[j + j2 + perm[k + k2]]];
@@ -383,7 +383,7 @@ let spd = 1.85; //speed variable, increase to go faster (1.85)
 let scale = 0.0028; //how detailed the perlin map is going to be - value represents amount of detail (.0028) [0.0008 => 0.01]
 
 let init = () => {
-  // context.fillStyle="#F7FEE7"
+  context.fillStyle = "#F7FEE7";
 
   noise.seed(z);
 
