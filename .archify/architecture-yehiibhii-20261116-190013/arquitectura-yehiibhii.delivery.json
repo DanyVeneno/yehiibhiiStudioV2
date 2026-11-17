@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "6fcdc9a8-4648-4ef1-8e69-27f200c7b5b4",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "C:\\Users\\YehiiBhii\\Desktop\\yehiibhiiStudioV2\\.archify\\architecture-yehiibhii-20261116-190013\\candidate.json",
+  "output": "C:\\Users\\YehiiBhii\\Desktop\\yehiibhiiStudioV2\\.archify\\architecture-yehiibhii-20261116-190013\\arquitectura-yehiibhii.html",
+  "specification": {
+    "sha256": "f7e511360818c0539a52cb7427cac3f5abfb4f92dd240d0293d36ce70eef7781",
+    "bytes": 3164
+  },
+  "artifact": {
+    "sha256": "f09c05fd59d813d42a313bca4a75cc885aaf7d4ae7a58a982578404a237acbf8",
+    "bytes": 841709
+  }
+}

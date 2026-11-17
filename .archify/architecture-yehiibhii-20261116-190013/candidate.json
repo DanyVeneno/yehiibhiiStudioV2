@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Arquitectura actual de Yehiibhii Estudio",
+    "locale": "es",
+    "output": ".archify/architecture-yehiibhii-20261116-190013/arquitectura-yehiibhii.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/DanyVeneno/yehiibhiiStudioV2.git",
+      "revision": "5346f029b62d6c5ed81663fd1da1e7cb8bde3c31"
+    }
+  },
+  "components": [
+    {
+      "id": "visitante",
+      "type": "external",
+      "label": "Visitante",
+      "sublabel": "Navegador web",
+      "pos": [40, 260],
+      "size": [130, 64],
+      "sources": [{ "path": "src/routes/index.js", "line": 17, "end_line": 21 }]
+    },
+    {
+      "id": "servidor",
+      "type": "backend",
+      "label": "Servidor Express",
+      "sublabel": "Registro y archivos estáticos",
+      "pos": [290, 260],
+      "size": [180, 64],
+      "sources": [{ "path": "src/app.js", "line": 8, "end_line": 18 }]
+    },
+    {
+      "id": "rutas",
+      "type": "backend",
+      "label": "Rutas de páginas",
+      "sublabel": "GET, redirecciones y datos",
+      "pos": [590, 260],
+      "size": [180, 64],
+      "sources": [{ "path": "src/routes/index.js", "line": 1, "end_line": 17 }, { "path": "src/routes/index.js", "line": 52, "end_line": 66 }]
+    },
+    {
+      "id": "plantillas",
+      "type": "frontend",
+      "label": "Plantillas EJS",
+      "sublabel": "Páginas v3 y vistas clásicas",
+      "pos": [890, 260],
+      "size": [190, 64],
+      "sources": [{ "path": "src/routes/index.js", "line": 6, "end_line": 14 }, { "path": "src/views/v3/_start.ejs", "line": 1, "end_line": 12 }]
+    },
+    {
+      "id": "contenido",
+      "type": "database",
+      "label": "Datos del sitio",
+      "sublabel": "site.js y tools.json",
+      "pos": [595, 70],
+      "size": [170, 64],
+      "sources": [{ "path": "src/data/site.js", "line": 1, "end_line": 16 }, { "path": "src/routes/index.js", "line": 1, "end_line": 14 }]
+    },
+    {
+      "id": "recursos",
+      "type": "database",
+      "label": "Recursos públicos",
+      "sublabel": "CSS, JS, imágenes y video",
+      "pos": [295, 450],
+      "size": [170, 64],
+      "sources": [{ "path": "src/app.js", "line": 16 }, { "path": "src/views/v3/_start.ejs", "line": 9, "end_line": 12 }]
+    }
+  ],
+  "connections": [
+    { "from": "visitante", "to": "servidor", "label": "Petición HTTP", "variant": "emphasis" },
+    { "from": "servidor", "to": "rutas", "label": "Despacha ruta" },
+    { "from": "rutas", "to": "plantillas", "label": "Renderiza vista" },
+    { "from": "rutas", "to": "contenido", "label": "Carga contenido" },
+    { "from": "servidor", "to": "recursos", "label": "Sirve archivos" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Flujo principal",
+      "items": ["Express recibe la petición y entrega la ruta al enrutador.", "El enrutador renderiza EJS con los datos compartidos del sitio."]
+    },
+    {
+      "dot": "emerald",
+      "title": "Contenido y recursos",
+      "items": ["El contenido de herramientas se lee desde un JSON local al iniciar.", "Express publica los recursos de src/public."]
+    }
+  ]
+}

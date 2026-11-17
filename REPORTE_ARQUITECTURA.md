@@ -1,5 +1,7 @@
 # Reporte técnico de ybestudio.tech
 
+> [Ver el diagrama interactivo de la arquitectura actual, generado con Archify](.archify/architecture-yehiibhii-20261116-190013/arquitectura-yehiibhii.html). El diagrama está basado en el commit `5346f029b62d6c5ed81663fd1da1e7cb8bde3c31`. El informe de abajo documenta una revisión anterior; algunas rutas y dependencias han cambiado.
+
 **Fecha de revisión:** 16 de noviembre de 2026  
 **Fuentes:** carpeta local `yehiibhiiStudioV2` y navegación directa de [ybestudio.tech](https://ybestudio.tech/).  
 **Propósito:** documentar cómo está construido el sitio para crear otro con la misma base tecnológica.
