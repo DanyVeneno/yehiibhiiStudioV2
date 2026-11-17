@@ -2,11 +2,20 @@
   "name": "juanitovenenoestudio2.0",
   "version": "2.0.0",
   "description": "sitio oficial de @juanitovenenoestudio",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "npm run build:css && nodemon src/index.js",
+    "start": "node src/index.js",
+    "build:css": "tailwindcss -i ./src/styles/tailwind.css -o ./src/public/css/tailwind.css --minify",
+    "dev:css": "tailwindcss -i ./src/styles/tailwind.css -o ./src/public/css/tailwind.css --watch",
+    "test": "node --test",
+    "test:e2e": "testsprite test run",
+    "test:e2e:plan": "testsprite test create --plan-template",
+    "test:e2e:doctor": "testsprite doctor"
   },
   "keywords": [
     "websitelegacy"
@@ -14,10 +23,16 @@
   "author": "Danny Veneno",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.0.1",
-    "three": "^0.157.0"
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "morgan": "^1.12.1",
+    "three": "^0.187.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "@testsprite/testsprite-cli": "^0.16.0",
+    "nodemon": "^3.1.11",
+    "tailwindcss": "^4.3.5"
   }
 }

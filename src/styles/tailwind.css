@@ -1,0 +1,6 @@
+@import "tailwindcss" source("../views");
+
+@theme {
+  --color-brand-lime: #a4df18;
+  --color-brand-ink: #12181a;
+}

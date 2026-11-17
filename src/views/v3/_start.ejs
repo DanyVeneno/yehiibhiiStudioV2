@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#12181a">
+    <meta name="description" content="<%= description %>">
+    <title><%= title %></title>
+    <link rel="canonical" href="https://ybestudio.tech<%= currentPath %>">
+    <link rel="icon" href="/image/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/image/apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/site-v3.css">
+    <script src="/js/site-v3.js" defer></script>
+  </head>
+  <body class="v3">
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+      <nav class="site-nav shell" aria-label="Navegación principal">
+        <a class="brand" href="/" aria-label="Yehiibhii Estudio, inicio">
+          <span class="brand-symbol" aria-hidden="true">Y<span>✳</span></span>
+          <span class="brand-name">YEHIIBHII <em>ESTUDIO</em><small>DISEÑO · TECNOLOGÍA · EVOLUCIÓN</small></span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-button>
+          <span class="menu-button-label">Menú</span><span class="menu-lines" aria-hidden="true"></span>
+        </button>
+        <div class="nav-links" id="site-menu" data-menu>
+          <a href="/servicios" <%= currentPath === '/servicios' ? 'aria-current="page"' : '' %>>Servicios</a>
+          <a href="/tienda" <%= currentPath === '/tienda' ? 'aria-current="page"' : '' %>>Portafolio</a>
+          <a href="/ecosistema" <%= currentPath === '/ecosistema' ? 'aria-current="page"' : '' %>>Ecosistema</a>
+          <a href="/about" <%= currentPath === '/about' ? 'aria-current="page"' : '' %>>Nosotros</a>
+          <a class="nav-contact" href="/contacto" <%= currentPath === '/contacto' ? 'aria-current="page"' : '' %>>Hablemos <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">

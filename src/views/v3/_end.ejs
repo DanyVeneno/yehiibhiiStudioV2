@@ -1,0 +1,39 @@
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-intro">
+        <div>
+          <p class="eyebrow">SIGUIENTE PASO</p>
+          <h2>Las buenas ideas<br><em>se construyen en equipo.</em></h2>
+        </div>
+        <a class="button button-lime" href="/contacto">Cuéntanos tu proyecto <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="shell footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Yehiibhii Estudio, inicio">
+            <span class="brand-symbol" aria-hidden="true">Y<span>✳</span></span>
+            <span class="brand-name">YEHIIBHII <em>ESTUDIO</em></span>
+          </a>
+          <p>Desarrollamos estrategias para ofertar tus productos y servicios con identidad, tecnología web y una experiencia más humana.</p>
+          <a class="text-link" href="https://ybestudio.com/" target="_blank" rel="noopener noreferrer">Abrir Experience Engine <span aria-hidden="true">↗</span></a>
+        </div>
+        <% footerGroups.forEach(group => { %>
+          <div class="footer-group">
+            <h3><%= group.title %></h3>
+            <ul>
+              <% group.links.forEach(link => { %>
+                <li><a href="<%= link.href %>" <%- link.href.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : '' %>><%= link.label %><% if (link.href.startsWith('http')) { %><span class="external-mark" aria-hidden="true">↗</span><% } %></a></li>
+              <% }) %>
+            </ul>
+          </div>
+        <% }) %>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© <%= new Date().getFullYear() %> Yehiibhii Estudio</span>
+        <span>Disrupt yourself or not.</span>
+        <div class="footer-socials">
+          <% socialLinks.forEach(link => { %><a href="<%= link.href %>" target="_blank" rel="noopener noreferrer"><%= link.label %></a><% }) %>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
