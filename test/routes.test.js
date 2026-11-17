@@ -20,6 +20,7 @@ for (const path of [
   "/",
   "/about",
   "/servicios",
+  "/inversion",
   "/disenoyartes",
   "/disenoydev",
   "/tienda",
@@ -50,4 +51,15 @@ test("new home links to the original visual experience and diagnostic", async ()
   assert.match(body, /href="\/experiencia"/);
   assert.match(body, /https:\/\/ybestudio\.com\//);
   assert.match(body, /href="\/ecosistema"/);
+});
+
+test("investment guide is linked from services and distinguishes estimates from a quote", async () => {
+  const services = await (await fetch(`${baseUrl}/servicios`)).text();
+  const investment = await (await fetch(`${baseUrl}/inversion`)).text();
+
+  assert.match(services, /href="\/inversion"/);
+  assert.match(investment, /Cotización personalizada/);
+  assert.match(investment, /\$35,000–\$70,000/);
+  assert.match(investment, /\$100,000–\$250,000\+/);
+  assert.match(investment, /no es una cotización final/i);
 });

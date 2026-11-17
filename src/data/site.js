@@ -20,6 +20,7 @@ export const footerGroups = [
     title: "Explora",
     links: [
       { label: "Servicios", href: "/servicios" },
+      { label: "Inversión", href: "/inversion" },
       { label: "Portafolio", href: "/tienda" },
       { label: "Ecosistema", href: "/ecosistema" },
       { label: "Experience Engine", href: "https://ybestudio.com/" },

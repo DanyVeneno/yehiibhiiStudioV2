@@ -29,6 +29,11 @@ router.get("/servicios", renderPage(
   "Servicios",
   "Diseño gráfico, identidad comercial, diseño y desarrollo web conectados con la experiencia del cliente.",
 ));
+router.get("/inversion", renderPage(
+  "inversion",
+  "Inversión orientativa",
+  "Conoce rangos orientativos de inversión para diseño web y evolución digital, y solicita una cotización personalizada para identidad visual.",
+));
 router.get("/tienda", renderPage(
   "tienda",
   "Portafolio",
